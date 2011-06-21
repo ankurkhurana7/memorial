@@ -1,0 +1,7 @@
+; $Id:
+name = theme1 
+description = This is mytheme developed for Clearsenses Site.
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+
