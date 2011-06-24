@@ -1,0 +1,14 @@
+; $Id$
+name = theme3
+core = 6.x
+engine = phptemplate
+regions[left] = Left sidebar
+; We do not have a right sidebar.
+; regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+stylesheets[all][] = style.css
+
+
