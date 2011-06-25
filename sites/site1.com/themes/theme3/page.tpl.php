@@ -42,66 +42,27 @@
  <a href="/plan-ahead"> <img src="<?php print($path_to_theme); ?>/images/free_gift.gif" alt="free gift" class="borderless_img"></a>
    </td>
  </tr>
+      
   <tr>
     <td colspan="2" style="text-align: center;" align="center">
-         <div id="menu_theme3">
-	<ul>
-		<li style="width:61px;"><a href="/"><img src="<?php print($path_to_theme); ?>/images/home_ovr.gif" alt="home"></a>
-	</li>
-		<li style="width:104px;"><a href="/plan-ahead" class="orange"><img src="<?php print($path_to_theme); ?>/images/pre-planning_ovr.gif" alt="pre-planning"></a>
-		</li>
-		<li style="width:84px;"><a href="/obituary/browse-and-search" class="blu"><img src="<?php print($path_to_theme); ?>/images/obituary_ovr.gif" alt="obituaries"></a>
-		</li>
-		<li style="width:74px;z-index:5000;"><a href="#"><img src="<?php print($path_to_theme); ?>/images/funeral_ovr.gif" alt="funeral"></a>
-			<ul>
-				<li ><a href="/funeral/how-to-plan-a-funeral" class="purple">&nbsp;How to plan a funeral</a></li>
-				<li ><a href="/funeral/veterans-honors" class="purple">&nbsp;Veteran's Honor</a></li>
-				<li ><a href="/funeral/signature-services" class="purple">&nbsp;Signature Services</a></li>
-                <li ><a href="/funeral/chapels-facilities" class="purple">&nbsp;Chapels &amp; Facilities</a></li>
-                <li ><a href="/funeral/flowers" class="purple">&nbsp;Flowers</a></li>
-     		</ul>
-     	</li>
-        <li style="width:104px;z-index:5000;"><a href="#"><img src="<?php print($path_to_theme); ?>/images/cemetery_ovr.gif" alt="our cemetery"></a>
-			<ul>
-			<li ><a href="/cemetery/how-to-plan-cemetery-arrangements" class="purple">&nbsp;How to plan cemetery arrangements</a></li>
-			<li ><a href="/cemetery/above-ground-entombment" class="purple">&nbsp;Above Ground Entombment</a></li>
-			<li ><a href="/cemetery/in-ground-burial" class="purple">&nbsp;In Ground Burial</a></li>
-            <li ><a href="/cemetery/cremation-memorialization" class="purple">&nbsp;Cremation Memorialization</a></li>
-            <li ><a href="/cemetery/veterans-honors" class="purple">&nbsp;Veterans Honors</a></li>
-           <li ><a href="/cemetery/floral-policy" class="purple">&nbsp;Floral Policy</a></li>
-			</ul>
-		</li>
-        <li style="width:86px;z-index:5000;"><a href="#"><img src="<?php print($path_to_theme); ?>/images/cremation_ovr.gif" alt="cremation"></a>
-			<ul>
-		   <li ><a href="/cremation/what-is-this" class="purple">&nbsp;What is Cremation?</a></li>
-			<li ><a href="/cremation/cremation-memorialization" class="purple">&nbsp;Cremation Memorialization</a></li>
-			<li ><a href="/cremation/cremation-ark--an-elegant-choice" class="purple">&nbsp;Cremation Ark - an elegant choice</a></li>
-            <li ><a href="/cremation/cremation-urn" class="purple">&nbsp;Cremation Urn</a></li>
-            <li ><a href="/cremation/signature-services" class="purple">&nbsp;Signature Services</a></li>
-			</ul>
-		</li>
-        <li style="width:83px;z-index:8000;"><a href="#"><img src="<?php print($path_to_theme); ?>/images/about_ovr.gif" alt="about us"></a>
-			<ul>
-			<li style="width:190px;z-index:8000;"><a href="/about-us/who-we-are" class="purple">&nbsp;Who we are</a></li>
-			<li style="width:190pxz-index:8000;"><a href="/about-us/gallery" class="purple">&nbsp;Gallery</a></li>
-            <li style="width:190px;z-index:8000;"><a href="/about-us/video-gallery/our-video" class="purple">&nbsp;Video Gallery</a></li>
-			<li style="width:190px;z-index:8000;"><a href="/about-us/faq" class="purple">&nbsp;FAQ</a></li>
-			<li style="width:190px;z-index:8000;"><a href="/about-us/our-history" class="purple">&nbsp;Our History</a></li>
-            <li style="width:190px;z-index:8000;"><a href="/about-us/team" class="purple">&nbsp;Team</a></li>
-            <li style="width:190px;z-index:8000;"><a href="/about-us/affiliate-information" class="purple">&nbsp;Affiliate Information</a></li>
-			</ul>
-		</li>
-        <li style="width:98px;z-index:5000;"><a href="#"><img src="<?php print($path_to_theme); ?>/images/local_info_ovr.gif" alt="local info"></a>
-			<ul>
-			<li ><a href="/local-info/important-contacts" class="purple">&nbsp;Important Contacts</a></li>
-			<li ><a href="/local-info/general-information/restaurants" class="purple">&nbsp;General Information</a></li>
-			<li ><a href="/local-info/location-and-driving-directions" class="purple">&nbsp;Location and Driving Directions</a></li>
-            <li ><a href="/funeral/flowers" class="purple">&nbsp;Flowers</a></li>
-            <li ><a href="/local-info/wedding-information" class="purple">&nbsp;Wedding Information</a></li>
-			</ul>
-		</li>
-	</ul>
+    <div id="menu">
+    <?php print $header ?>
+    </div>
+  <!--       <div id="menu">
+    
+	<?php if (is_array($primary_links)) : ?>
+<ul>
+<?php foreach ($primary_links as $link): ?>
+<li><?php           
+    $href = $link['href'] == "<front>" ? base_path() : base_path() . drupal_get_path_alias($link['href']);
+    print "<a href='" . $href . "'>" . $link['title'] . "</a>";               
+    ?></li>
+<?php endforeach; ?>
+</ul>
+<?php endif; ?>
 </div>
+-->
+
         </td>
   </tr>
 </tbody></table>
@@ -109,6 +70,13 @@
 </div>
 <div id="body_inside">
 <div class="inside_left_col">
+
+  <?php if (count($secondary_links)){ ?>
+  <div id="secondary">
+    <?php print theme('links', $secondary_links,array('class' => 'secondary_menu')) ?>
+  </div> <!-- /#secondary -->
+<?php } ?>
+
 
 <?php if ($title!="contact_us"): ?>
 
@@ -122,7 +90,7 @@
 <?php endif; ?>
 
 <div class="inside_right_col">
- <?php print $header ?>
+
 <?php print $breadcrumb ?>
 <h2><?php print $title ?></h2>
 <?php print $content ?>

@@ -63,7 +63,7 @@ FONT, DIV, INPUT, TEXTAREA, FORM {
 	color:#5382BA;
 }
 
-#menu_theme3{
+#menu{
 	width:730px;
 	margin:0px auto;
 	padding:5px;
@@ -296,17 +296,17 @@ select {
 }
 
 
-#menu_theme3 ul{
+#menu ul{
 	padding:0;
 	margin:0;
         width:auto;
 }
 
-#menu_theme3 li a:hover{
+#menu li a:hover{
 	background-position: bottom center;
 }
 
-#menu_theme3 li{
+#menu li{
     width:120px;
     position: relative;
 	float: left;
@@ -315,7 +315,7 @@ select {
 	padding:0;
 }
 
-#menu_theme3 li a{
+#menu li a{
 	height: 20px;
 	display: block;
 	text-decoration:none;
@@ -329,13 +329,13 @@ select {
 
 
 
-#menu_theme3 ul ul{
+#menu ul ul{
 	position: absolute;
 	top: 38px;
 	visibility: hidden;
 }
 
-#menu_theme3 ul li:hover ul{
+#menu ul li:hover ul{
 	visibility:visible;
 }
 
@@ -343,7 +343,7 @@ select {
 new css
 */
 
-#menu_theme3 ul li ul li {
+#menu ul li ul li {
 width:250px; background-color:#F9F9F9;z-index:5000;
 }
 
