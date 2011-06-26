@@ -47,7 +47,10 @@ new css
 */
 
 #menu ul li ul li {
-width:250px; background-color:#F9F9F9;z-index:5000;
+width:250px;
+background-color:#F9F9F9;
+z-index:5000;
+height:20px;
 }
 
 #menu{
@@ -97,29 +100,29 @@ z-index:5000;
 }
 #nice-menu-1 .menu-387 a{
 border: 0 none;
-background-image: url(images/cemetery_ovr.gif);
+background-image: url(images/about_ovr.gif);
 background-repeat:no-repeat;
 }
 #nice-menu-1 .menu-387 {
-width:104px;
+width:83px;
 z-index:5000;
 }
 #nice-menu-1 .menu-385 a{
 border: 0 none;
-background-image: url(images/cremation_ovr.gif);
+background-image: url(images/cemetery_ovr.gif);
 background-repeat:no-repeat;
 }
 #nice-menu-1 .menu-385 {
-width:86px;
+width:104px;
 z-index:5000;
 }
 #nice-menu-1 .menu-386 a{
 border: 0 none;
-background-image: url(images/about_ovr.gif);
+background-image: url(images/cremation_ovr.gif);
 background-repeat:no-repeat;
 }
 #nice-menu-1 .menu-386 {
-width:83px;
+width:86px;
 z-index:8000;
 }
 #nice-menu-1 .menu-388 a{
@@ -130,5 +133,25 @@ background-repeat:no-repeat;
 #nice-menu-1 .menu-388 {
 width:98px;
 z-index:5000;
+}
+#nice-menu-1 .menu-238 .menu-371 a{
+border: 0;
+background: none;
+}
+#nice-menu-1 .menu-238 .menu-373 a{
+border: 0;
+background: none;
+}
+#nice-menu-1 .menu-238 .menu-374 a{
+border: 0;
+background: none;
+}
+#nice-menu-1 .menu-238 .menu-375 a{
+border: 0;
+background: none;
+}
+#nice-menu-1 .menu-238 .menu-376 a{
+border: 0;
+background: none;
 }
 
