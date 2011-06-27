@@ -93,6 +93,7 @@ width:84px;
 border: 0 none;
 background-image: url(images/funeral_ovr.gif);
 background-repeat:no-repeat;
+
 }
 #nice-menu-1 .menu-238 {
 width:74px;
@@ -135,23 +136,38 @@ width:98px;
 z-index:5000;
 }
 #nice-menu-1 .menu-238 .menu-371 a{
-border: 0;
+border-width:1px;	
+border-bottom-style:solid;
 background: none;
+background: url(img/purple.jpg) no-repeat top center;
+height:22px;
 }
 #nice-menu-1 .menu-238 .menu-373 a{
-border: 0;
+border-width:1px;	
+border-bottom-style:solid;
 background: none;
+background: url(img/purple.jpg) no-repeat top center;
+height:22px;
 }
 #nice-menu-1 .menu-238 .menu-374 a{
-border: 0;
+border-width:1px;	
+border-bottom-style:solid;
 background: none;
+background: url(img/purple.jpg) no-repeat top center;
+height:22px;
 }
 #nice-menu-1 .menu-238 .menu-375 a{
-border: 0;
+border-width:1px;	
+border-bottom-style:solid;
 background: none;
+background: url(img/purple.jpg) no-repeat top center;
+height:22px;
 }
 #nice-menu-1 .menu-238 .menu-376 a{
-border: 0;
+border-width:1px;	
+border-bottom-style:solid;
 background: none;
+background: url(img/purple.jpg) no-repeat top center;
+height:22px;
 }
 
